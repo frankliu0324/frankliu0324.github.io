@@ -36,7 +36,7 @@
             gap: 30px;
         }
 
-        /* Sidebar Style */
+        /* Sidebar Style (No Image Version) */
         sidebar {
             flex: 1;
             max-width: 300px;
@@ -47,31 +47,16 @@
             position: sticky;
             top: 20px;
             height: fit-content;
-            text-align: center;
+            text-align: left; /* 改為靠左對齊，使文字排版更流暢 */
         }
 
-        .profile-img {
-            width: 150px;
-            height: 200px;
-            background-color: #edf2f7;
-            margin: 0 auto 20px;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #718096;
-            font-size: 14px;
-            border: 1px solid var(--border-color);
-            object-fit: cover;
-        }
-
-        .name-zh { font-size: 24px; font-weight: bold; color: var(--primary-color); margin-bottom: 5px; }
+        .name-zh { font-size: 26px; font-weight: bold; color: var(--primary-color); margin-bottom: 5px; }
         .name-en { font-size: 16px; color: #4a5568; margin-bottom: 15px; }
-        .title { font-size: 15px; font-weight: 500; color: var(--secondary-color); margin-bottom: 20px; }
+        .title { font-size: 15px; font-weight: 500; color: var(--secondary-color); margin-bottom: 25px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
         
-        .info-list { text-align: left; font-size: 14px; border-top: 1px solid var(--border-color); padding-top: 15px; }
-        .info-item { margin-bottom: 10px; word-break: break-all; }
-        .info-item strong { color: var(--primary-color); }
+        .info-list { font-size: 14px; }
+        .info-item { margin-bottom: 15px; word-break: break-all; }
+        .info-item strong { color: var(--primary-color); display: block; margin-bottom: 2px; }
 
         /* Main Content Style */
         main {
@@ -108,18 +93,17 @@
 <body>
 
     <div class="container">
-        <!-- 側邊欄個人基本資料 -->
+        <!-- 側邊欄個人基本資料（無照片優化版） -->
         <sidebar>
-            <img src="avatar.jpg" alt="劉峰旭 教授" class="profile-img" onerror="this.src='https://via.placeholder.com/150x200?text=Profile+Image'">
             <div class="name-zh">劉峰旭 博士</div>
             <div class="name-en">Prof. Feng-Hsu Liu</div>
             <div class="title">教育經營與管理學系 專任教授</div>
             
             <div class="info-list">
-                <div class="info-item"><strong>Email:</strong> frankliu0324@gmail.com</div>
-                <div class="info-item"><strong>研究專長:</strong> B2B行銷策略、大數據精準行銷、廠商成長策略、國際企業管理</div>
-                <div class="info-item"><strong>學歷:</strong> 元智大學 國際企業管理 博士</div>
-                <div class="info-item"><strong>服務單位:</strong> 國立臺北教育大學 教育經營與管理學系</div>
+                <div class="info-item"><strong>服務單位</strong>國立臺北教育大學 教育經營與管理學系</div>
+                <div class="info-item"><strong>電子郵件</strong>frankliu0324@gmail.com</div>
+                <div class="info-item"><strong>學歷背景</strong>元智大學 國際企業管理 博士</div>
+                <div class="info-item"><strong>研究專長</strong>B2B行銷策略、大數據精準行銷、廠商成長策略、國際企業管理</div>
             </div>
         </sidebar>
 
@@ -159,6 +143,9 @@
                     </li>
                     <li>
                         <strong>Liu, Feng-Hsu*</strong>, Chen, Lu-Jui & Tsou, Hung-Tai (2019). Suppliers' local-network embeddedness and buyers' joint innovation: mediating role of service-innovation competence. <em>International Marketing Review</em>, 36(3), 342-364. <span class="pub-tags">[SSCI, Q2, Impact Factor: 4.6]</span>
+                    </li>
+                    <li>
+                        <strong>Liu, Feng-Hsu*</strong> & Chen, Lu-Jui (2018). The impacts of competence-based marketing capabilities: Relative attention, relationship learning and collaboration development. <em>Journal of Business & Industrial Marketing</em>, 33(7), 896-910. <span class="pub-tags">[SSCI, Q2]</span>
                     </li>
                     <li>
                         <strong>Liu, Feng-Hsu*</strong> & Huang, Tseng-Lung (2018). The influence of collaborative competence and service innovation on manufacturers' competitive advantage. <em>Journal of Business & Industrial Marketing</em>, 33(4), 466-477. <span class="pub-tags">[SSCI, Q2]</span>
