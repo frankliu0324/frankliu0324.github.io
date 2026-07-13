@@ -86,7 +86,6 @@
             color: var(--secondary-color);
         }
 
-        /* 當前被選中（彈出）的按鈕樣式 */
         .nav-btn.active {
             background-color: var(--secondary-color);
             color: #ffffff;
@@ -104,13 +103,11 @@
             min-height: 600px;
         }
 
-        /* 核心功能：預設隱藏所有區塊 */
         .tab-content {
             display: none;
-            animation: fadeIn 0.3s ease-in-out; /* 彈出時有輕微的淡入與展開感 */
+            animation: fadeIn 0.3s ease-in-out;
         }
 
-        /* 當區塊被加入 .active 時才突然彈出顯示 */
         .tab-content.active {
             display: block;
         }
@@ -145,7 +142,7 @@
 <body>
 
     <div class="container">
-        <!-- 側邊欄個人基本資料與系統選單 -->
+        <!-- 側邊欄個人基本資料 -->
         <sidebar>
             <div class="name-zh">劉峰旭 博士</div>
             <div class="name-en">Prof. Feng-Hsu Liu</div>
@@ -158,7 +155,7 @@
                 <div class="info-item"><strong>研究專長</strong>B2B行銷策略、大數據精準行銷、廠商成長策略、國際企業管理</div>
             </div>
 
-            <!-- 點擊切換/展開的系統按鈕 -->
+            <!-- 切換選單 -->
             <div class="nav-menu">
                 <button class="nav-btn active" onclick="switchTab('about')">ℹ️ 關於我</button>
                 <button class="nav-btn" onclick="switchTab('research')">📚 代表性學術著作</button>
@@ -170,120 +167,120 @@
 
         <!-- 主要內容區 -->
         <main>
-            <!-- 區塊一：關於我（預設顯示） -->
+            <!-- 區塊一：關於我 -->
             <div id="about" class="tab-content active">
                 <h2>關於我</h2>
                 <p>
-                    現任職於<strong>國立臺北教育大學教育經營與管理學系專任教授</strong>[cite: 1]。歷任國立屏東大學行銷與流通管理學系教授[cite: 1]、世新大學企業管理學系教授兼終身教育學院院長及副教務長[cite: 1]、元培醫事科技大學助理教授[cite: 1]。
+                    現任職於<strong>國立臺北教育大學教育經營與管理學系專任教授</strong>。歷任國立屏東大學行銷與流通管理學系教授、世新大學企業管理學系教授兼終身教育學院院長及副教務長、元培醫事科技大學助理教授。
                 </p>
                 <p style="margin-top: 10px;">
-                    學術研究聚焦於<strong>代工製造廠商（OEM supplier）如何在分工與競合的環境下建構有效的成長策略</strong>[cite: 1]。歷年來學術成果豐碩，已於國內外指標性學術期刊發表共計 31 篇論文（包含 14 篇 SSCI 與 4 篇 TSSCI 論文）[cite: 1]，並連續十一年度獲得國家科學及技術委員會（國科會/科技部）專題研究計畫補助支持[cite: 1]。
+                    學術研究聚焦於<strong>代工製造廠商（OEM supplier）如何在分工與競合的環境下建構有效的成長策略</strong>。歷年來學術成果豐碩，已於國內外指標性學術期刊發表共計 31 篇論文（包含 14 篇 SSCI 與 4 篇 TSSCI 論文），並連續十一年度獲得國家科學及技術委員會（國科會/科技部）專題研究計畫補助支持。
                 </p>
             </div>
 
-            <!-- 區塊二：學術著作（點擊才彈出） -->
+            <!-- 區塊二：學術著作 -->
             <div id="research" class="tab-content">
                 <h2>代表性學術著作 (Selected Publications)</h2>
-                <div class="pub-count-info">💡 歷年學術期刊發表共計 31 篇（含 14 篇 SSCI、4 篇 TSSCI 論文），以下羅列代表性著作：[cite: 1]</div>
+                <div class="pub-count-info">💡 歷年學術期刊發表共計 31 篇（含 14 篇 SSCI、4 篇 TSSCI 論文），以下羅列代表性著作：</div>
                 
                 <h3>英文期刊論文 (International Journals)</h3>
                 <ul>
-                    <li><strong>Liu, Feng-Hsu*</strong> & Tsou, Hung-Tai (2025). Effective coopetition and its effects on competitive advantage. <em>Management Decision</em>, accepted and forthcoming. <span class="pub-tags">[SSCI, Q1, IF: 5.1]</span>[cite: 1]</li>
-                    <li><strong>Liu, Feng-Hsu*</strong> (2025). Local supplier's power and its effects on buyer's reaction. <em>Asia Pacific Journal of Marketing and Logistics</em>, 37(7), 2123-2142. <span class="pub-tags">[SSCI, Q1, IF: 5.1]</span>[cite: 1] <a href="https://doi.org/10.1108/APJML-05-2024-0693" class="pub-links" target="_blank">[DOI]</a></li>
-                    <li>Tsou, Hung-Tai & <strong>Liu, Feng-Hsu*</strong> (2025). Unpacking the nexus between innovation ecosystem-oriented coopetition capability, organizational learning, and service innovations: A mediation-moderation model. <em>Canadian Journal of Administrative Sciences</em>, 42(2), 235-253. <span class="pub-tags">[SSCI, Q4, IF: 0.9]</span>[cite: 1] <a href="https://doi.org/10.1002/cjas.1774" class="pub-links" target="_blank">[DOI]</a></li>
-                    <li><strong>Liu, Feng-Hsu</strong> & Tsou, Hung-Tai* (2025). Role of manufacturers' market-related capabilities in developing market-oriented codevelopment and competitive advantages in an emerging market. <em>Canadian Journal of Administrative Sciences</em>, 42(1), 56-73. <span class="pub-tags">[SSCI, Q4, IF: 0.9]</span>[cite: 1] <a href="https://doi.org/10.1002/cjas.1757" class="pub-links" target="_blank">[DOI]</a></li>
-                    <li><strong>Liu, Feng-Hsu*</strong>, Chen, Lu-Jui & Tsou, Hung-Tai (2019). Suppliers' local-network embeddedness and buyers' joint innovation: mediating role of service-innovation competence. <em>International Marketing Review</em>, 36(3), 342-364. <span class="pub-tags">[SSCI, Q2, IF: 4.6]</span>[cite: 1]</li>
-                    <li>Hsu, Xuan-Yu, <strong>Liu, Feng-Hsu</strong>, Tsou, Hung-Tai* & Chen, Lu-Jui (2019). Openness of technology adoption, top management support, and service innovation: A social innovation perspective. <em>Journal of Business & Industrial Marketing</em>, 34(4), 575-590. <span class="pub-tags">[SSCI, Q2, IF: 3.9]</span>[cite: 1]</li>
-                    <li><strong>Liu, Feng-Hsu*</strong> & Chen, Lu-Jui (2018). The impacts of competence-based marketing capabilities: Relative attention, relationship learning and collaboration development. <em>Journal of Business & Industrial Marketing</em>, 33(7), 896-910. <span class="pub-tags">[SSCI, Q2, IF: 3.9]</span>[cite: 1]</li>
-                    <li><strong>Liu, Feng-Hsu*</strong> & Huang, Tseng-Lung (2018). The influence of collaborative competence and service innovation on manufacturers' competitive advantage. <em>Journal of Business & Industrial Marketing</em>, 33(4), 466-477. <span class="pub-tags">[SSCI, Q2, IF: 3.9]</span>[cite: 1]</li>
-                    <li><strong>Liu, Feng-Hsu*</strong> (2017). Market orientation, competence-based marketing capability and firm development. <em>Research Journal of Business and Management</em>, 4(4), 540-548.[cite: 1]</li>
-                    <li><strong>Liu, Feng-Hsu*</strong> (2016). Interactions, innovation, and services. <em>The Service Industries Journal</em>, 36(13-14), 658-674. <span class="pub-tags">[SSCI, Q1, IF: 7.4]</span>[cite: 1]</li>
-                    <li>Huang, Tseng-Lung* & <strong>Liu, Feng-Hsu</strong> (2015). Whether service innovativeness has additive effects on mobile banking business from switching costs perspective. <em>International Journal of Mobile Communications</em>, 13(2), 204-227. <span class="pub-tags">[SSCI, Q3, IF: 1.1]</span>[cite: 1]</li>
-                    <li>Tsou, Hung-Tai, <strong>Liu, Feng-Hsu</strong> & Hsu, Xuan-Yu (2015). The effects of reputation and relative low price on purchase intention: service quality as a mediated moderator. <em>Web Journal of Chinese Management Review</em>, 18(3), 1-16.[cite: 1]</li>
-                    <li>Huang, Tseng-Lung* & <strong>Liu, Feng-Hsu</strong> (2014). Formation of augmented-reality interactive technology's persuasive effects from the perspective of experiential value. <em>Internet Research</em>, 24(1), 82-109. <span class="pub-tags">[SSCI, Q1, IF: 6.8]</span>[cite: 1]</li>
-                    <li><strong>Liu, Feng-Hsu*</strong> (2014). OEM supplier impact on buyer competence development. <em>Journal of Strategy and Management</em>, 7(1), 2-18. <span class="pub-tags">[ESCI]</span>[cite: 1]</li>
-                    <li><strong>Liu, Feng-Hsu*</strong>, Tsou, Hung-Tai & Chen, Lu-Jui (2013). The impact of OEM supplier initiatives on buyer competence development: The moderating roles of collaborative relationship and competitive environment. <em>Asia Pacific Journal of Management</em>, 30(4), 1285-1303. <span class="pub-tags">[SSCI, Q1, IF: 5.8]</span>[cite: 1]</li>
-                    <li>Liu, Heng-Yih & <strong>劉峰旭*</strong> (2011). The process of competence Leveraging in related diversification: A case of technology management at a composite-material company. <em>Technology Analysis & Strategic Management</em>, 23(2), 209-227. <span class="pub-tags">[SSCI, Q2, IF: 2.8]</span>[cite: 1]</li>
-                    <li><strong>Liu, Feng-Hsu*</strong>, Liu, Heng-Yih, Lin, Ting-Ling & Chiu, Shih-Kuan (2011). The role and capabilities of a local master weight management franchisee. <em>International Business Research</em>, 4(3), 271-282. <span class="pub-tags">[EconLit]</span>[cite: 1]</li>
-                    <li><strong>Liu, Feng-Hsu*</strong>, Liu, Heng-Yih & Lin, Ting-Ling (2008). The competence and constraints of brand-building for contract manufacturers. <em>Journal of Brand Management</em>, 15(6), 412-432. <span class="pub-tags">[SSCI, Q2, IF: 4.1]</span>[cite: 1]</li>
+                    <li><strong>Liu, Feng-Hsu*</strong> & Tsou, Hung-Tai (2025). Effective coopetition and its effects on competitive advantage. <em>Management Decision</em>, accepted and forthcoming. <span class="pub-tags">[SSCI, Q1, IF: 5.1]</span></li>
+                    <li><strong>Liu, Feng-Hsu*</strong> (2025). Local supplier's power and its effects on buyer's reaction. <em>Asia Pacific Journal of Marketing and Logistics</em>, 37(7), 2123-2142. <span class="pub-tags">[SSCI, Q1, IF: 5.1]</span> <a href="https://doi.org/10.1108/APJML-05-2024-0693" class="pub-links" target="_blank">[DOI]</a></li>
+                    <li>Tsou, Hung-Tai & <strong>Liu, Feng-Hsu*</strong> (2025). Unpacking the nexus between innovation ecosystem-oriented coopetition capability, organizational learning, and service innovations: A mediation-moderation model. <em>Canadian Journal of Administrative Sciences</em>, 42(2), 235-253. <span class="pub-tags">[SSCI, Q4, IF: 0.9]</span> <a href="https://doi.org/10.1002/cjas.1774" class="pub-links" target="_blank">[DOI]</a></li>
+                    <li><strong>Liu, Feng-Hsu</strong> & Tsou, Hung-Tai* (2025). Role of manufacturers' market-related capabilities in developing market-oriented codevelopment and competitive advantages in an emerging market. <em>Canadian Journal of Administrative Sciences</em>, 42(1), 56-73. <span class="pub-tags">[SSCI, Q4, IF: 0.9]</span> <a href="https://doi.org/10.1002/cjas.1757" class="pub-links" target="_blank">[DOI]</a></li>
+                    <li><strong>Liu, Feng-Hsu*</strong>, Chen, Lu-Jui & Tsou, Hung-Tai (2019). Suppliers' local-network embeddedness and buyers' joint innovation: mediating role of service-innovation competence. <em>International Marketing Review</em>, 36(3), 342-364. <span class="pub-tags">[SSCI, Q2, IF: 4.6]</span></li>
+                    <li>Hsu, Xuan-Yu, <strong>Liu, Feng-Hsu</strong>, Tsou, Hung-Tai* & Chen, Lu-Jui (2019). Openness of technology adoption, top management support, and service innovation: A social innovation perspective. <em>Journal of Business & Industrial Marketing</em>, 34(4), 575-590. <span class="pub-tags">[SSCI, Q2, IF: 3.9]</span></li>
+                    <li><strong>Liu, Feng-Hsu*</strong> & Chen, Lu-Jui (2018). The impacts of competence-based marketing capabilities: Relative attention, relationship learning and collaboration development. <em>Journal of Business & Industrial Marketing</em>, 33(7), 896-910. <span class="pub-tags">[SSCI, Q2, IF: 3.9]</span></li>
+                    <li><strong>Liu, Feng-Hsu*</strong> & Huang, Tseng-Lung (2018). The influence of collaborative competence and service innovation on manufacturers' competitive advantage. <em>Journal of Business & Industrial Marketing</em>, 33(4), 466-477. <span class="pub-tags">[SSCI, Q2, IF: 3.9]</span></li>
+                    <li><strong>Liu, Feng-Hsu*</strong> (2017). Market orientation, competence-based marketing capability and firm development. <em>Research Journal of Business and Management</em>, 4(4), 540-548.</li>
+                    <li><strong>Liu, Feng-Hsu*</strong> (2016). Interactions, innovation, and services. <em>The Service Industries Journal</em>, 36(13-14), 658-674. <span class="pub-tags">[SSCI, Q1, IF: 7.4]</span></li>
+                    <li>Huang, Tseng-Lung* & <strong>Liu, Feng-Hsu</strong> (2015). Whether service innovativeness has additive effects on mobile banking business from switching costs perspective. <em>International Journal of Mobile Communications</em>, 13(2), 204-227. <span class="pub-tags">[SSCI, Q3, IF: 1.1]</span></li>
+                    <li>Tsou, Hung-Tai, <strong>Liu, Feng-Hsu</strong> & Hsu, Xuan-Yu (2015). The effects of reputation and relative low price on purchase intention: service quality as a mediated moderator. <em>Web Journal of Chinese Management Review</em>, 18(3), 1-16.</li>
+                    <li>Huang, Tseng-Lung* & <strong>Liu, Feng-Hsu</strong> (2014). Formation of augmented-reality interactive technology's persuasive effects from the perspective of experiential value. <em>Internet Research</em>, 24(1), 82-109. <span class="pub-tags">[SSCI, Q1, IF: 6.8]</span></li>
+                    <li><strong>Liu, Feng-Hsu*</strong> (2014). OEM supplier impact on buyer competence development. <em>Journal of Strategy and Management</em>, 7(1), 2-18. <span class="pub-tags">[ESCI]</span></li>
+                    <li><strong>Liu, Feng-Hsu*</strong>, Tsou, Hung-Tai & Chen, Lu-Jui (2013). The impact of OEM supplier initiatives on buyer competence development: The moderating roles of collaborative relationship and competitive environment. <em>Asia Pacific Journal of Management</em>, 30(4), 1285-1303. <span class="pub-tags">[SSCI, Q1, IF: 5.8]</span></li>
+                    <li>Liu, Heng-Yih & <strong>劉峰旭*</strong> (2011). The process of competence Leveraging in related diversification: A case of technology management at a composite-material company. <em>Technology Analysis & Strategic Management</em>, 23(2), 209-227. <span class="pub-tags">[SSCI, Q2, IF: 2.8]</span></li>
+                    <li><strong>Liu, Feng-Hsu*</strong>, Liu, Heng-Yih, Lin, Ting-Ling & Chiu, Shih-Kuan (2011). The role and capabilities of a local master weight management franchisee. <em>International Business Research</em>, 4(3), 271-282. <span class="pub-tags">[EconLit]</span></li>
+                    <li><strong>Liu, Feng-Hsu*</strong>, Liu, Heng-Yih & Lin, Ting-Ling (2008). The competence and constraints of brand-building for contract manufacturers. <em>Journal of Brand Management</em>, 15(6), 412-432. <span class="pub-tags">[SSCI, Q2, IF: 4.1]</span></li>
                 </ul>
 
                 <h3>中文期刊論文 (Chinese Journals)</h3>
                 <ul>
-                    <li>鄒鴻泰、<strong>劉峰旭*</strong> (2025)。從SOR理論與SDT理論探討行動銀行APP要素如何有益於享樂價值與持續使用意圖。<em>資訊管理學報</em>，32(3)，269-293。<span class="pub-tags">[TSSCI]</span>[cite: 1]</li>
-                    <li><strong>劉峰旭*</strong>、許峻瑋 (2023)。從網絡觀點探討中小企業新產品開發績效。<em>管理實務與理論研究期刊</em>，17(1)，14-29。[cite: 1]</li>
-                    <li>陳律睿*、董佳樺、<strong>劉峰旭</strong> (2021)。主要城市對周邊城市發展之擴散效應分析。<em>全球商業經營管理學報</em>，13，91-106。[cite: 1]</li>
-                    <li>陳律睿*、<strong>劉峰旭</strong>、葉文心 (2018)。影響產品多角化策略之要素分析-以在台子公司為例。<em>多國籍企業管理評論</em>，12(1)，23-44。[cite: 1]</li>
-                    <li><strong>劉峰旭*</strong>、宋俊豪 (2017)。轉換成本前置因素之研究：共同創新角色之探討。<em>中原企管評論</em>，9(4)，18-35。[cite: 1]</li>
-                    <li>陳律睿*、陳俊忠、<strong>劉峰旭</strong> (2016)。子公司當地鑲嵌關係與母公司關注之效果探討。<em>管理與系統</em>，23(2)，169-195。<span class="pub-tags">[TSSCI]</span>[cite: 1]</li>
-                    <li>陳欽雨*、<strong>劉峰旭</strong>、林哲緯 (2014)。綠色意識與宗教熱忱對素食認知及茹素意願之影響。<em>運動休閒餐旅研究</em>，9(4)，18-35。[cite: 1]</li>
-                    <li><strong>劉峰旭*</strong>、劉恆逸、林婷鈴、洪緯典 (2012)。薰衣客森林的成長體驗。<em>產業與管理論壇</em>，14(3)，94-109。<span class="pub-tags">[TSSCI]</span>[cite: 1]</li>
-                    <li><strong>劉峰旭*</strong>與劉恆逸 (2011)。台灣連鎖服務業國際化策略之研究。<em>中華管理評論</em>，14(3)，1-19。[cite: 1]</li>
-                    <li>陳律睿*、蔡顯童、<strong>劉峰旭</strong> (2011)。子公司外部網絡鑲嵌之決定因素與影響效果。<em>管理評論</em>，31(1)，21-44。<span class="pub-tags">[TSSCI]</span>[cite: 1]</li>
-                    <li>陳律睿*、<strong>劉峰旭</strong>、賴品潔 (2011)。多國籍企業母子公司知識移轉與子公司績效之探討。<em>多國籍企業管理評論</em>，5(2)，25-44。[cite: 1]</li>
+                    <li>鄒鴻泰、<strong>劉峰旭*</strong> (2025)。從SOR理論與SDT理論探討行動銀行APP要素如何有益於享樂價值與持續使用意圖。<em>資訊管理學報</em>，32(3)，269-293。<span class="pub-tags">[TSSCI]</span></li>
+                    <li><strong>劉峰旭*</strong>、許峻瑋 (2023)。從網絡觀點探討中小企業新產品開發績效。<em>管理實務與理論研究期刊</em>，17(1)，14-29。</li>
+                    <li>陳律睿*、董佳樺、<strong>劉峰旭</strong> (2021)。主要城市對周邊城市發展之擴散效應分析。<em>全球商業經營管理學報</em>，13，91-106。</li>
+                    <li>陳律睿*、<strong>劉峰旭</strong>、葉文心 (2018)。影響產品多角化策略之要素分析-以在台子公司為例。<em>多國籍企業管理評論</em>，12(1)，23-44。</li>
+                    <li><strong>劉峰旭*</strong>、宋俊豪 (2017)。轉換成本前置因素之研究：共同創新角色之探討。<em>中原企管評論</em>，9(4)，18-35。</li>
+                    <li>陳律睿*、陳俊忠、<strong>劉峰旭</strong> (2016)。子公司當地鑲嵌關係與母公司關注之效果探討。<em>管理與系統</em>，23(2)，169-195。<span class="pub-tags">[TSSCI]</span></li>
+                    <li>陳欽雨*、<strong>劉峰旭</strong>、林哲緯 (2014)。綠色意識與宗教熱忱對素食認知及茹素意願之影響。<em>運動休閒餐旅研究</em>，9(4)，18-35。</li>
+                    <li><strong>劉峰旭*</strong>、劉恆逸、林婷鈴、洪緯典 (2012)。薰衣草森林的成長體驗。<em>產業與管理論壇</em>，14(3)，94-109。<span class="pub-tags">[TSSCI]</span></li>
+                    <li><strong>劉峰旭*</strong>與劉恆逸 (2011)。台灣連鎖服務業國際化策略之研究。<em>中華管理評論</em>，14(3)，1-19。</li>
+                    <li>陳律睿*、蔡顯童、<strong>劉峰旭</strong> (2011)。子公司外部網絡鑲嵌之決定因素與影響效果。<em>管理評論</em>，31(1)，21-44。<span class="pub-tags">[TSSCI]</span></li>
+                    <li>陳律睿*、<strong>劉峰旭</strong>、賴品潔 (2011)。多國籍企業母子公司知識移轉與子公司績效之探討。<em>多國籍企業管理評論</em>，5(2)，25-44。</li>
                 </ul>
             </div>
 
-            <!-- 區塊三：研究計畫（點擊才彈出） -->
+            <!-- 區塊三：研究計畫 -->
             <div id="projects" class="tab-content">
                 <h2>研究計畫 (Research Projects)</h2>
                 <h3>歷年國科會專題研究計畫 (NSTC Projects)</h3>
                 <ul>
-                    <li>114年度：供應商如何發展並利用競合能力強化競合與創造競爭優勢 (計畫主持人，策略管理學門)[cite: 1]</li>
-                    <li>111年度：遇強則強：新興市場中當地夥伴選擇對供應鏈整合優勢的影響 (計畫主持人，策略管理學門)[cite: 1]</li>
-                    <li>110年度：市場導向之共同生產對競爭優勢之影響——以行銷相關能力為中介變數 (計畫主持人，策略管理學門)[cite: 1]</li>
-                    <li>106年度：能耐為基礎的行銷策略對新合作關係發展的影響 (計畫主持人，策略管理學門)[cite: 1]</li>
-                    <li>105年度：從買家觀點探討共同創新的供應商夥伴選擇與影響 (計畫主持人，策略管理學門)[cite: 1]</li>
-                    <li>104年度：能耐行銷能力的前因與影響 (計畫主持人，策略管理學門)[cite: 1]</li>
-                    <li>103年度：代工廠商服務創新的前因與影響 (計畫主持人，策略管理學門)[cite: 1]</li>
-                    <li>101年度：能耐發展來自於外部企業關係或競爭環境？代工廠商對買家能力與績效的影響 (計畫主持人，策略管理學門)[cite: 1]</li>
-                    <li>99年度：委外關係中發展以能耐為基礎之機會的過程 (計畫主持人，策略管理學門)[cite: 1]</li>
-                    <li>98年度：以資源依賴之觀點探討委外關係中代工廠商主動行為之角色與影響 (計畫主持人，策略管理學門)[cite: 1]</li>
-                    <li>97年度：維持顧客關係的自有品牌過程-以一家智慧型手機廠商為例 (計畫主持人，策略管理學門)[cite: 1]</li>
+                    <li>114年度：供應商如何發展並利用競合能力強化競合與創造競爭優勢 (計畫主持人，策略管理學門)</li>
+                    <li>111年度：遇強則強：新興市場中當地夥伴選擇對供應鏈整合優勢的影響 (計畫主持人，策略管理學門)</li>
+                    <li>110年度：市場導向之共同生產對競爭優勢之影響——以行銷相關能力為中介變數 (計畫主持人，策略管理學門)</li>
+                    <li>106年度：能耐為基礎的行銷策略對新合作關係發展的影響 (計畫主持人，策略管理學門)</li>
+                    <li>105年度：從買家觀點探討共同創新的供應商夥伴選擇與影響 (計畫主持人，策略管理學門)</li>
+                    <li>104年度：能耐行銷能力的前因與影響 (計畫主持人，策略管理學門)</li>
+                    <li>103年度：代工廠商服務創新的前因與影響 (計畫主持人，策略管理學門)</li>
+                    <li>101年度：能耐發展來自於外部企業關係或競爭環境？代工廠商對買家能力與績效的影響 (計畫主持人，策略管理學門)</li>
+                    <li>99年度：委外關係中發展以能耐為基礎之機會的過程 (計畫主持人，策略管理學門)</li>
+                    <li>98年度：以資源依賴之觀點探討委外關係中代工廠商主動行為之角色與影響 (計畫主持人，策略管理學門)</li>
+                    <li>97年度：維持顧客關係的自有品牌過程-以一家智慧型手機廠商為例 (計畫主持人，策略管理學門)</li>
                 </ul>
                 
                 <h3>產學合作與循環經濟</h3>
                 <ul>
-                    <li>黑水虻農業剩餘資源去化與新產品開發計畫：黑水虻產品市場分析與行銷策略 (計畫主持人，114/01/01 ~ 114/12/31)[cite: 1]</li>
-                    <li>2025 大數據精準行銷盃競賽 (計畫共同主持人，114/03/01 ~ 115/03/31)[cite: 1]</li>
-                    <li>113年度蛋雞糞處理示範場域建置、財務規劃與風險評估案 (協同計畫主持人，113/10/01 ~ 113/12/15)[cite: 1]</li>
-                    <li>113年辦理雞糞處理之宣導與輔導及撰寫計畫執行成果檢討與建議報告 (共同計畫主持人，113/01/01 ~ 113/12/15)[cite: 1]</li>
-                    <li>家品行銷企業診斷與經營活動優化 (計畫主持人，113/04/01 ~ 114/04/30)[cite: 1]</li>
+                    <li>黑水虻農業剩餘資源去化與新產品開發計畫：黑水虻產品市場分析與行銷策略 (計畫主持人，114/01/01 ~ 114/12/31)</li>
+                    <li>2025 大數據精準行銷盃競賽 (計畫共同主持人，114/03/01 ~ 115/03/31)</li>
+                    <li>113年度蛋雞糞處理示範場域建置、財務規劃與風險評估案 (協同計畫主持人，113/10/01 ~ 113/12/15)</li>
+                    <li>113年辦理雞糞處理之宣導與輔導及撰寫計畫執行成果檢討與建議報告 (共同計畫主持人，113/01/01 ~ 113/12/15)</li>
+                    <li>家品行銷企業診斷與經營活動優化 (計畫主持人，113/04/01 ~ 114/04/30)</li>
                 </ul>
             </div>
 
-            <!-- 區塊四：榮譽與證照（點擊才彈出） -->
+            <!-- 區塊四：榮譽與證照 -->
             <div id="honors" class="tab-content">
                 <h2>學術榮譽與專業證照</h2>
                 <div class="grid-2">
                     <div class="card">
                         <h4>學術榮譽與獎項</h4>
                         <ul style="padding-left:15px; margin-bottom:0; font-size:14px;">
-                            <li>世新大學 111學年度 熱心服務獎[cite: 1]</li>
-                            <li>世新大學 110學年度 行政傑出獎[cite: 1]</li>
-                            <li>世新大學 110學年度 研究績優獎[cite: 1]</li>
-                            <li>世新大學 109學年度 教學特優老師獎[cite: 1]</li>
-                            <li>世新大學 108、107學年度 教學績優老師獎[cite: 1]</li>
-                            <li>世新大學 103學年度 特殊教學方法獎[cite: 1]</li>
+                            <li>世新大學 111學年度 熱心服務獎</li>
+                            <li>世新大學 110學年度 行政傑出獎</li>
+                            <li>世新大學 110學年度 研究績優獎</li>
+                            <li>世新大學 109學年度 教學特優老師獎</li>
+                            <li>世新大學 108、107學年度 教學績優老師獎</li>
+                            <li>世新大學 103學年度 特殊教學方法獎</li>
                         </ul>
                     </div>
                     <div class="card">
                         <h4>專業核心證照</h4>
                         <ul style="padding-left:15px; margin-bottom:0; font-size:14px;">
-                            <li>PMP 國際專案管理師 (No. 1297584)[cite: 1]</li>
-                            <li>TIMS 行銷企劃師 (傑出獎，No. CPT241-0026)[cite: 1]</li>
-                            <li>ESG 永續助理管理師 (商研院，證字第1130052號)[cite: 1]</li>
-                            <li>WBSA 高階商務企劃證照 (No. 000064)[cite: 1]</li>
-                            <li>APIAA 認證產業分析師 (No. 11081001003)[cite: 1]</li>
+                            <li>PMP 國際專案管理師 (No. 1297584)</li>
+                            <li>TIMS 行銷企劃師 (傑出獎，No. CPT241-0026)</li>
+                            <li>ESG 永續助理管理師 (商研院，證字第1130052號)</li>
+                            <li>WBSA 高階商務企劃證照 (No. 000064)</li>
+                            <li>APIAA 認證產業分析師 (No. 11081001003)</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- 區塊五：開課與教學（點擊才彈出） -->
+            <!-- 區塊五：開課與教學 -->
             <div id="teaching" class="tab-content">
                 <h2>教學與可授課課程</h2>
-                <p style="margin-bottom: 10px;">具備豐富的全英語（EMI）授課經驗[cite: 1]，曾獲 EMI 課程認證[cite: 1]，並具有澳洲阿得雷德大學（University of Adelaide）EMI 教學知能培訓資歷[cite: 1]。</p>
+                <p style="margin-bottom: 10px;">具備豐富的全英語（EMI）授課經驗，曾獲 EMI 課程認證，並具有澳洲阿得雷德大學（University of Adelaide）EMI 教學知能培訓資歷。</p>
                 <div class="grid-2">
                     <div class="card">
                         <h4>行銷與經營策略</h4>
@@ -306,26 +303,19 @@
         </main>
     </div>
 
-    <!-- 彈出切換邏輯的 JavaScript -->
     <script>
         function switchTab(tabId) {
-            // 1. 隱藏所有內容區塊
             const contents = document.querySelectorAll('.tab-content');
             contents.forEach(content => content.classList.remove('active'));
 
-            // 2. 取消所有按鈕的 active 狀態
             const buttons = document.querySelectorAll('.nav-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
 
-            // 3. 顯示目前點擊的區塊
             document.getElementById(tabId).classList.add('active');
 
-            // 4. 將當前點擊的按鈕設為 active 狀態
-            // 利用 event 或是尋找含有該 onclick 條件的按鈕
             const currentBtn = Array.from(buttons).find(btn => btn.getAttribute('onclick').includes(tabId));
             if (currentBtn) currentBtn.classList.add('active');
             
-            // 5. 讓視窗自動回到頂部（防止大頁面切換至小頁面時卡在中間）
             window.scrollTo({ top: 0 });
         }
     </script>
