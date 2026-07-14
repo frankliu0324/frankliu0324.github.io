@@ -213,6 +213,7 @@
                 <button class="nav-btn" onclick="switchTab('projects')">🔬 國科會與產學計畫</button>
                 <button class="nav-btn" onclick="switchTab('honors')">🏆 學術榮譽與證照</button>
                 <button class="nav-btn" onclick="switchTab('teaching')">👨‍🏫 開設與授課課程</button>
+                <button class="nav-btn" onclick="switchTab('courses')">📖 教授課程</button>
                 <button class="nav-btn" onclick="switchTab('students')">🎓 歷屆指導學生目錄</button>
                 <button class="nav-btn" onclick="switchTab('gallery')">📷 相關照片</button>
             </div>
@@ -354,20 +355,29 @@
                 </div>
             </div>
 
-            <!-- 新增區塊六：歷屆指導學生目錄（點擊才彈出） -->
+            <!-- 區塊六：教授課程（新增，點擊才彈出） -->
+            <div id="courses" class="tab-content">
+                <h2>教授課程</h2>
+                <ul>
+                    <li><strong>行銷管理</strong>：教育經營與管理學系大學部二年級選修，115-1</li>
+                    <li><strong>經營管理與國際行銷</strong>：教育經營與管理學系大學部三年級選修，115-1</li>
+                    <li><strong>方案規劃與設計</strong>：教育經營與管理學系大學部三年級選修，115-1</li>
+                    <li><strong>數位教材設計</strong>：教育經營與管理學系大學部四年級選修，115-1</li>
+                </ul>
+            </div>
+
+            <!-- 區塊七：歷屆指導學生目錄 -->
             <div id="students" class="tab-content">
                 <h2>歷屆指導學生目錄</h2>
                 
                 <h3>碩士班 (Master's Students)</h3>
                 <ul>
-                    <!-- 您可以在此處依序填入學生的姓名與論文題目 -->
                     <li><strong>[學生姓名]</strong> (畢業年度) - 論文題目：[此處填入碩士論文題目]</li>
                     <li><strong>[學生姓名]</strong> (畢業年度) - 論文題目：[此處填入碩士論文題目]</li>
                 </ul>
 
                 <h3>學士班 (Undergraduate Students)</h3>
                 <ul>
-                    <!-- 您可以在此處依序填入大專生計畫或專題小組的資訊 -->
                     <li><strong>[學生姓名]</strong> (109年度國科會大專生計畫) - 計畫題目：社團參與和企業實習對學習及就業力之影響-以企業管理學系大學生為例</li>
                     <li><strong>[學生姓名]</strong> (104年度國科會大專生計畫) - 計畫題目：供應商共同創新能耐對買家轉換成本之影響</li>
                     <li><strong>[學生姓名]</strong> (98年度國科會大專生計畫) - 計畫題目：台灣連鎖服務業國際化策略之研究</li>
@@ -375,7 +385,7 @@
                 </ul>
             </div>
 
-            <!-- 區塊七：相關照片 -->
+            <!-- 區塊八：相關照片 -->
             <div id="gallery" class="tab-content">
                 <h2>相關照片</h2>
                 <div class="photo-gallery">
